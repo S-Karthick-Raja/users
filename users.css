@@ -35,9 +35,30 @@ body{
 }
 
 .user-form{
-  margin: 2rem;
+    margin: 2rem;
+    background-color: white;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    gap: 1rem ;
 }
 
 .edit-user-form {
     display: none;
 }
+
+/* Start */
+.action-button{
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 1s;
+}
+/* End */
+.user-container:hover .action-button{
+    transform: translate(0);
+    opacity: 1;
+}
+
+/* Vendor Prefixes */
+/* -webkit: ; chromium & safari */
+/* -moz-: ; firefox */
