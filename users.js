@@ -2,7 +2,7 @@ document.body.innerHTML = `
 <div class="user-form">
 <input class="add-user-name" placeholder="Enter your name" />
 <input class="add-user-avatar" placeholder="Enter your pic url">
-<button onclick="addUser()">ADD USER</button>
+<a onclick="addUser()" class="waves-effect waves-light btn orange"><i class="material-icons left">add</i>ADD USER</a>
 </div>
 <section class="user-list">
 </section>`;
@@ -24,12 +24,14 @@ userContainer.innerHTML = ""; // To erase the old user
         <img class="user-avatar" src="${user.avatar}" alt=${user.name} />
         <div>
         <p class="user-name">${user.name}</p>
-        <button onclick="toggleUser(${user.id})">EDIT</button>
-        <button onclick="deleteUser(${user.id})">DELETE</button>
+        <div class="action-button">
+        <a onclick="toggleUser(${user.id})" class="waves-effect waves-light btn green"><i class="material-icons left">create</i>EDIT</a>
+        <a onclick="deleteUser(${user.id})" class="waves-effect waves-light btn red"><i class="material-icons left">delete</i>DELETE</a>
+        </div>
         <div class="edit-user-form edit-${user.id}">
         <input value="${user.name}" class="edit-${user.id}-user-name" placeholder="Enter your name" />
         <input value="${user.avatar}" class="edit-${user.id}-user-avatar" placeholder="Enter your pic url" />
-        <button onclick="saveUser(${user.id})">Save</button>
+        <a onclick="saveUser(${user.id})" class="waves-effect waves-light btn green"><i class="material-icons right">send</i>Save</a>
         </div>
         </div>
       </div>
