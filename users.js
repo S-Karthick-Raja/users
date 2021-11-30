@@ -9,7 +9,7 @@ document.body.innerHTML = `
 
 async function getAllUsers() {
   const data = await fetch(
-    "https://6166c4dd13aa1d00170a6702.mockapi.io/users",
+    "https://61921f06aeab5c0017105d5e.mockapi.io/users",
     { method: "GET"}
     ); //fetch returs us a promise
   const users = await data.json();
