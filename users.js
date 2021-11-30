@@ -45,7 +45,7 @@ getAllUsers()
 async function deleteUser(userId){
     console.log("deleting....", userId)
     const data = await fetch(
-        "https://6166c4dd13aa1d00170a6702.mockapi.io/users/" + userId,
+        "https://61921f06aeab5c0017105d5e.mockapi.io/users/" + userId,
         {method: "DELETE"}
         );
 
@@ -63,7 +63,7 @@ async function addUser(){
     // 2. Data - Body -> stringfy (JSON) - //JAvascript -> JSON Data
     // 3. headers - JSON data
     const data = await fetch(
-    "https://6166c4dd13aa1d00170a6702.mockapi.io/users/",
+    "https://61921f06aeab5c0017105d5e.mockapi.io/users/",
     {
     method: "POST",
     headers: {"Content-Type": "application/json"},
@@ -95,7 +95,7 @@ async function saveUser(userId) {
     ).value;
 
     const data = await fetch(
-        "https://6166c4dd13aa1d00170a6702.mockapi.io/users/" + userId,
+        "https://61921f06aeab5c0017105d5e.mockapi.io/users/" + userId,
     {
     method: "PUT",
     headers: {"content-Type": "application/json"},
